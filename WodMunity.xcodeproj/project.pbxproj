@@ -12,6 +12,9 @@
 		7D1CB5141FB005DB008E57F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CB5121FB005DB008E57F7 /* LaunchScreen.storyboard */; };
 		7D1CB51F1FB005DB008E57F7 /* WodMunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB51E1FB005DB008E57F7 /* WodMunityTests.swift */; };
 		7D1CB52A1FB005DB008E57F7 /* WodMunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5291FB005DB008E57F7 /* WodMunityUITests.swift */; };
+		7D1CB5421FB010A6008E57F7 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5401FB010A6008E57F7 /* AppContext.swift */; };
+		7D1CB5441FB01137008E57F7 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */; };
+		7D1CB5471FB01935008E57F7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 		7D1CB5251FB005DB008E57F7 /* WodMunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WodMunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1CB5291FB005DB008E57F7 /* WodMunityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodMunityUITests.swift; sourceTree = "<group>"; };
 		7D1CB52B1FB005DB008E57F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1CB5401FB010A6008E57F7 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		7D1CB5451FB017B5008E57F7 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				7D1CB5071FB005DB008E57F7 /* AppDelegate.swift */,
+				7D1CB53F1FB010A6008E57F7 /* Core */,
+				7D1CB5411FB010A6008E57F7 /* App */,
 				7D1CB5101FB005DB008E57F7 /* Assets.xcassets */,
 				7D1CB5121FB005DB008E57F7 /* LaunchScreen.storyboard */,
 				7D1CB5151FB005DB008E57F7 /* Info.plist */,
@@ -117,6 +126,23 @@
 				7D1CB52B1FB005DB008E57F7 /* Info.plist */,
 			);
 			path = WodMunityUITests;
+			sourceTree = "<group>";
+		};
+		7D1CB53F1FB010A6008E57F7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7D1CB5401FB010A6008E57F7 /* AppContext.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7D1CB5411FB010A6008E57F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */,
+				7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1CB5471FB01935008E57F7 /* AppCoordinator.swift in Sources */,
 				7D1CB5081FB005DB008E57F7 /* AppDelegate.swift in Sources */,
+				7D1CB5441FB01137008E57F7 /* AppTabBarController.swift in Sources */,
+				7D1CB5421FB010A6008E57F7 /* AppContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +321,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7D1CB5131FB005DB008E57F7 /* Base */,
+				7D1CB5451FB017B5008E57F7 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -303,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -360,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
