@@ -15,6 +15,9 @@ final class AppCoordinator {
     private let appContext: AppContext
 
     private lazy var appTapBarController = AppTabBarController()
+    private lazy var prInfoCoordinator: PRInfoCoordinator = {
+        return PRInfoCoordinator(tabBarController: appTapBarController, appContext: appContext)
+    }()
 
     init(window: UIWindow, appContext: AppContext) {
         self.window = window
@@ -22,6 +25,10 @@ final class AppCoordinator {
     }
 
     func start() {
+
+        //Coordinators start order will be the tab order
+        prInfoCoordinator.start()
+
         window.rootViewController = appTapBarController
         window.makeKeyAndVisible()
     }

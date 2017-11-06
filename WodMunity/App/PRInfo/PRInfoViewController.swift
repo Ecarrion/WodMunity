@@ -1,5 +1,5 @@
 //
-//  RootTabBarController.swift
+//  PRInfoViewController.swift
 //  WodMunity
 //
 //  Created by Ernesto Carrión on 2017/11/05.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class AppTabBarController: UITabBarController {
+class PRInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = NSLocalizedString("PR's Info", comment: "")
     }
 }

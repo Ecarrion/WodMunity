@@ -15,6 +15,9 @@
 		7D1CB5421FB010A6008E57F7 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5401FB010A6008E57F7 /* AppContext.swift */; };
 		7D1CB5441FB01137008E57F7 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */; };
 		7D1CB5471FB01935008E57F7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */; };
+		7D1CB54B1FB01FD2008E57F7 /* PRInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB5491FB01FD2008E57F7 /* PRInfoViewController.swift */; };
+		7D1CB54C1FB01FD2008E57F7 /* PRInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CB54A1FB01FD2008E57F7 /* PRInfoViewController.xib */; };
+		7D1CB54E1FB01FF3008E57F7 /* PRInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CB54D1FB01FF3008E57F7 /* PRInfoCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		7D1CB5451FB017B5008E57F7 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7D1CB5491FB01FD2008E57F7 /* PRInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRInfoViewController.swift; sourceTree = "<group>"; };
+		7D1CB54A1FB01FD2008E57F7 /* PRInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRInfoViewController.xib; sourceTree = "<group>"; };
+		7D1CB54D1FB01FF3008E57F7 /* PRInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRInfoCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +147,19 @@
 			children = (
 				7D1CB5461FB01935008E57F7 /* AppCoordinator.swift */,
 				7D1CB5431FB01137008E57F7 /* AppTabBarController.swift */,
+				7D1CB5481FB01FA6008E57F7 /* PRInfo */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		7D1CB5481FB01FA6008E57F7 /* PRInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7D1CB54D1FB01FF3008E57F7 /* PRInfoCoordinator.swift */,
+				7D1CB5491FB01FD2008E57F7 /* PRInfoViewController.swift */,
+				7D1CB54A1FB01FD2008E57F7 /* PRInfoViewController.xib */,
+			);
+			path = PRInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +271,7 @@
 			files = (
 				7D1CB5141FB005DB008E57F7 /* LaunchScreen.storyboard in Resources */,
 				7D1CB5111FB005DB008E57F7 /* Assets.xcassets in Resources */,
+				7D1CB54C1FB01FD2008E57F7 /* PRInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1CB54B1FB01FD2008E57F7 /* PRInfoViewController.swift in Sources */,
 				7D1CB5471FB01935008E57F7 /* AppCoordinator.swift in Sources */,
 				7D1CB5081FB005DB008E57F7 /* AppDelegate.swift in Sources */,
 				7D1CB5441FB01137008E57F7 /* AppTabBarController.swift in Sources */,
 				7D1CB5421FB010A6008E57F7 /* AppContext.swift in Sources */,
+				7D1CB54E1FB01FF3008E57F7 /* PRInfoCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
