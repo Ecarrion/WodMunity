@@ -14,7 +14,9 @@ enum UserMapper: PersistenceMapper {
     typealias PersistenceObject = RealmUser
 
     static func model(from object: RealmUser) -> User {
-        return User(id: object.id, name: object.name, prInfo: PRInfoMapper.model(from: object.prInfo))
+        return User(id: object.id,
+                    name: object.name,
+                    prInfo: PRInfoMapper.model(from: object.prInfo ?? RealmPRInfo()))
     }
 
     static func persistenceObject(from model: User) -> RealmUser {

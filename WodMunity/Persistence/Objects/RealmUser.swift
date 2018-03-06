@@ -12,7 +12,7 @@ import RealmSwift
 final class RealmUser: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String?
-    @objc dynamic var prInfo: RealmPRInfo = RealmPRInfo()
+    @objc dynamic var prInfo: RealmPRInfo?
 
     convenience init(id: String, name: String?, prInfo: RealmPRInfo) {
         self.init()
