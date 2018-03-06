@@ -1,6 +1,7 @@
 # Bundler
 .bundle/
 vendor/
+Pods/
 
 # Mac OS X
 .DS_Store
