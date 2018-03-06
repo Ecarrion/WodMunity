@@ -1,0 +1,56 @@
+# Bundler
+.bundle/
+vendor/
+
+# Mac OS X
+.DS_Store
+
+# Xcode
+
+## Build
+build/
+DerivedData
+
+## Settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Playground
+timeline.xctimeline
+playground.xcworkspace
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcbkptlist
+*.xcscmblueprint
+
+# Fastlane
+fastlane/report.xml
+fastlane/README.md
+fastlane/test_output
+screenshots/
+logs/*.json
+*.ipa
+*.dSYM.zip
+
+# dependency graph
+tools/*.dot
+tools/*.png
+
+# OneSky
+.env
+tmp/
+
+# Misc
+.pt
+R.generated.swift
+cobertura.xml
